@@ -1,0 +1,902 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(26, 38, 38);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    color: #fff;
+}
+
+.header {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.header .header-left {
+    float: left;
+}
+
+.header-left h2 {
+    font-size: 30px;
+}
+
+.header .header-right {
+    float: right;
+}
+
+.header-left {
+    padding-top: 10px;
+}
+
+.header-right {
+    padding-top: 20px;
+}
+
+.header-right ul {
+    display: flex;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.header-right li {
+    list-style-type: none;
+}
+
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+    width: 100px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    margin-top: 5px;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .5s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+
+.scrolling-active {
+    background-color: rgba(26, 38, 38, 0.75)
+}
+
+
+/* Jumbotron */
+.jumbotron {
+    color: #fff;
+    background-image: url(../image/bg3Kecil.jpg);
+    width: 100%;
+    height: 620px;
+    padding-top: 250px;
+    padding-left: 150px;
+    text-align: center;
+    display: flex;
+}
+
+.jumbotron h1 {
+    font-size: 100px;
+}
+
+.jumbotron p {
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+.picture img {
+    width: 300px;
+    height: 300x;
+    margin-top: -50px;
+    margin-left: 200px;
+}
+
+/* Akhir Jumbotron */
+
+/* About Menu */
+.about {
+    height: 500px;
+}
+
+.content {
+    background-color: #c5a880;
+    padding: 20px;
+    padding-top: 90px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+}
+
+.about-card {
+    background-color: #fff;
+    box-shadow: 12px 12px 10px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    height: 400px;
+}
+
+.about-content h1 {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.content-main {
+    width: 1000px;
+    padding-top: 20px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.content-left {
+    width: 500px;
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+.content-left h2 {
+    padding-left: 200px;
+    padding-bottom: 20px;
+}
+
+.content-left p {
+    width: 490px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-right {
+    width: 500px;
+}
+
+.content-right h2 {
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+}
+
+.content-right p {
+    padding-left: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-right ul {
+    padding-left: 50px;
+}
+
+.content-right li {
+    padding-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Akhir About Menu */
+
+
+/* Product Menu */
+.product-card {
+    background-color: #fff;
+    box-shadow: 12px 12px 10px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.product-card h1 {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.product-space {
+    width: 1050px;
+    padding-left: 50px;
+}
+
+.image img {
+    width: 150px;
+    margin-left: 40px;
+}
+
+.border {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+.product-content {
+    display: flex;
+    padding-top: 20px;
+    margin: 0 50px;
+}
+
+.product-content .description {
+    font-family: sans-serif;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+.product-content .description p {
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.7;
+    width: 500px;
+    padding-top: 10px;
+    padding-left: 10px;
+    line-height: 20px;
+}
+
+.pesan {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    padding-bottom: 50px;
+    margin-left: 690px;
+}
+
+.pesan a {
+    text-decoration: none;
+}
+
+.pesan span {
+    font-size: 27px;
+    margin-top: 5px;
+    color: white;
+    width: 100px;
+    height: 50px;
+    padding: 5px 10px;
+    background-color: #5f914d;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 5px #476b70;
+    margin-bottom: 20px;
+}
+
+.pesan span:hover {
+    opacity: 1;
+}
+
+.pesan span:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+    opacity: 1;
+}
+
+/* Akhir Product Menu */
+
+
+/* Contact Menu */
+.contact {
+    height: 600px;
+}
+
+.contact-card {
+    background-color: #fff;
+    box-shadow: 12px 12px 10px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    height: 470px;
+}
+
+.contact-card h1 {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.contact-content {
+    display: flex;
+}
+
+.contact-left {
+    width: 600px;
+    padding-left: 50px;
+}
+
+.contact-left h3 {
+    width: 500px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.contact-right {
+    width: 450px;
+    height: 350px;
+    padding-left: 40px;
+    background-color: #8d7b63;
+    color: #fff;
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+
+form {
+    padding-top: 20px;
+}
+
+.form-control {
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 5px;
+    width: 300px;
+}
+
+.button {
+    margin-top: 20px;
+    width: 100px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.sosmed {
+    padding-top: 50px;
+    padding-left: 70px;
+    font-family: verdana, arial, arial;
+}
+
+.sosmed .logo {
+    display: flex;
+}
+
+.sosmed .logo .card-posisi {
+    width: 300px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #8d7b63;
+    border-radius: 20px;
+}
+
+.sosmed span {
+    color: #fff;
+    font-size: 20px;
+}
+
+.sosmed .logo span {
+    letter-spacing: 3px;
+    padding-left: 20px;
+}
+
+.sosmed .logo a {
+    color: #000;
+    text-decoration: none;
+}
+
+.sosmed .logo span i {
+    padding-right: 20px;
+}
+
+.sosmed .logo .card-posisi:hover {
+    background-color: #fff;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.sosmed .logo .card-posisi:hover span {
+    color: #c5a880;
+}
+
+
+/* Sosmed Trick */
+
+/* Whatsapp */
+.sosmed .logo .card-posisi .text-whatsapp::before {
+    content: "Whatsapp";
+}
+
+.sosmed .logo .card-posisi:hover .text-whatsapp::before {
+    content: "";
+}
+
+.sosmed .logo .card-posisi:hover .whatsapp i {
+    padding-right: 0;
+}
+
+.sosmed .logo .card-posisi:hover .text-whatsapp::after {
+    content: "081908279448";
+}
+
+/* AKhir Whatsapp */
+
+
+/* Instagram */
+.sosmed .logo .card-posisi .text-instagram::before {
+    content: "Instagram";
+}
+
+.sosmed .logo .card-posisi:hover .text-instagram::before {
+    content: "";
+}
+
+.sosmed .logo .card-posisi:hover .text-instagram::after {
+    content: "kopikuy20";
+}
+
+/* Akhir Instagram */
+
+/* Akhir Contact Menu */
+
+
+
+/* Footer */
+footer {
+    font-family: sans-serif;
+    color: #fff;
+    background-color: rgba(34, 49, 52);
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+}
+
+/* Akhir Footer */
+
+
+
+/* Break Point */
+
+
+@media (max-width : 768px) {
+    .content {
+        width: 768px;
+    }
+
+    /* JUMBOTRON */
+
+    .jumbotron {
+        width: 768px;
+        padding-top: 200px;
+        padding-left: 0;
+        display: block;
+    }
+
+    .jumbotron h1 {
+        text-align: center;
+        font-size: 100px;
+    }
+
+    .jumbotron p {
+        font-size: 16px;
+        padding-top: 25px;
+    }
+
+    .picture img {
+        width: 200px;
+        height: 300x;
+        padding-top: 50px;
+        margin-left: -0px;
+    }
+
+    /* AKHIR JUMBOTRON */
+
+
+
+
+    /* ABOUT MENU */
+
+    .about {
+        height: 100%;
+    }
+
+    .content-main {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .about-card {
+        height: 100%;
+    }
+
+    .content-left {
+        padding-bottom: 10px;
+        border-right: none;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+    }
+
+    .content-left {
+        padding-left: 7px;
+    }
+
+    .content-right {
+        padding-bottom: 20px;
+    }
+
+    .content-right p {
+        padding-left: 0;
+    }
+
+    .content-right ul {
+        padding-left: 0;
+    }
+
+    .content-right h2 {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    /* AKHIR ABOUT MENU */
+
+
+    /* PRODUCT MENU */
+
+    .product-space {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .image img {
+        width: 150px;
+        margin-left: 0;
+    }
+
+    .product-content .description {
+        width: 400px;
+        padding-left: 10px;
+    }
+
+    .product-content .description p {
+        width: 100%;
+    }
+
+    .pesan {
+        padding-top: 40px;
+        margin-left: 400px;
+    }
+
+    /* AKHIR PRODUCT MENU */
+
+
+
+    /* ABOUT MENU */
+    .contact {
+        height: 100%;
+        padding-bottom: 70px;
+    }
+
+    .contact-card {
+        height: 100%;
+        padding-bottom: 50px;
+    }
+
+    .contact-content {
+        display: block;
+    }
+
+    .contact-left {
+        padding-left: 0;
+    }
+
+    .contact-left h3 {
+        text-align: center;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .sosmed {
+        display: flex;
+        padding: 0 30px;
+        padding-top: 50px;
+    }
+
+    .sosmed .logo {
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    .contact-right {
+        width: 530px;
+        padding: 0 40px;
+        margin-left: 40px;
+        margin-right: 80px;
+    }
+
+    .form-control {
+        margin: 5px 0;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .button {
+        width: 100px;
+    }
+
+    .sosmed .logo .card-posisi:hover .text-whatsapp::after {
+        content: "081908279448";
+        font-size: 19px;
+    }
+
+
+    /* AKHIR ABOUT MENU */
+
+
+
+    /* FOOTER */
+
+    footer {
+        width: 768px;
+    }
+
+
+    /* FOOTER */
+}
+
+@media (max-width : 450px) {
+    .content {
+        padding: 90px 30px 10px 30px;
+        width: 100%;
+    }
+
+    .container {
+        width: 414px;
+    }
+
+    /* HEADER */
+
+    .header {
+        max-width: 414px;
+        width: 414px;
+    }
+
+    .header-left h2 {
+        display: none;
+    }
+
+    .header .header-right {
+        float: left;
+        margin-left: 10px;
+    }
+
+    .header-right ul {
+        padding-left: 35px;
+    }
+
+    /* AKHIR HEADER */
+
+
+
+    /* JUMBOTRON */
+
+    .jumbotron {
+        width: 414px;
+        padding-top: 200px;
+        padding-left: 0;
+        display: block;
+    }
+
+    .jumbotron h1 {
+        text-align: center;
+        font-size: 55px;
+    }
+
+    .jumbotron p {
+        font-size: 15px;
+        padding-top: 25px;
+    }
+
+    .picture img {
+        width: 200px;
+        height: 300x;
+        padding-top: 50px;
+        margin-left: -0px;
+    }
+
+    /* AKHIR JUMBOTRON */
+
+
+
+
+    /* ABOUT MENU */
+
+    .about {
+        height: 100%;
+    }
+
+    .content-main {
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: 0 10px;
+    }
+
+    .about-card {
+        height: 100%;
+        padding: 10px;
+    }
+
+    .content-left {
+        width: 300px;
+        padding-bottom: 10px;
+        border-right: none;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+        padding-left: 7px;
+    }
+
+    .content-left h2 {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .content-left p {
+        width: 100%;
+    }
+
+    .content-right {
+        width: 300px;
+        padding-bottom: 20px;
+    }
+
+    .content-right p {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .content-right ul {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .content-right h2 {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 0;
+    }
+
+    /* AKHIR ABOUT MENU */
+
+
+    /* PRODUCT MENU */
+
+    .product-space {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .image img {
+        width: 150px;
+        margin-left: 80px;
+    }
+
+    .product-card h1 {
+        padding-bottom: 10px;
+    }
+
+    .product-content {
+        width: 300px;
+        display: block;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .product-content .description {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .product-content .description p {
+        width: 100%;
+    }
+
+    .pesan {
+        padding-top: 40px;
+        margin-left: 180px;
+    }
+
+    /* AKHIR PRODUCT MENU */
+
+
+
+    /* ABOUT MENU */
+    .contact {
+        height: 100%;
+        padding-bottom: 70px;
+    }
+
+    .contact-card {
+        height: 100%;
+        padding-bottom: 50px;
+    }
+
+    .contact-card h1 {
+        padding-bottom: 15px;
+    }
+
+    .contact-content {
+        display: block;
+    }
+
+    .contact-left {
+        padding-left: 0;
+    }
+
+    .contact-left h3 {
+        text-align: center;
+        width: 350px;
+        font-size: 15px;
+        padding: 0 10px;
+        padding-right: 50px;
+    }
+
+    .sosmed {
+        display: block;
+        padding: 0 10px;
+        padding-top: 30px;
+    }
+
+    .sosmed .logo {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .contact-right {
+        width: 300px;
+        padding: 0 15px;
+        margin: 0 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .form-control {
+        margin: 5px 0;
+        margin-bottom: 20px;
+        padding: 5px;
+        width: 100%;
+    }
+
+
+    .button {
+        width: 100px;
+    }
+
+    .sosmed .logo .card-posisi:hover .text-whatsapp::after {
+        content: "081908279448";
+        font-size: 19px;
+    }
+
+
+    /* AKHIR ABOUT MENU */
+
+
+
+    /* FOOTER */
+
+    footer {
+        width: 100%;
+    }
+
+
+    /* FOOTER */
+
+
+}
+
+/* Akhir Break Point */
